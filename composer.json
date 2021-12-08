@@ -1,5 +1,5 @@
 {
-    "name": "crystalbit-us/cb_movie_quotes",
+    "name": "crystalbit-us/cb_moviequotes",
     "description": "Installs and outputs movie quotations exposed through a REST web API.",
     "type": "project",
     "authors": [
