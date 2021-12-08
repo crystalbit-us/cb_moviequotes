@@ -1,0 +1,6 @@
+name: cb_moviequotes
+type: module
+description: A REST API to send a JSON response of movie quotes.
+package: crystalbit-us
+core: 8.x
+core_version_requirement: ^8 || ^9

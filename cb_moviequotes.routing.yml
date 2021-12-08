@@ -1,0 +1,15 @@
+cb_moviequotes.example:
+  path: '/cb-moviequotes/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\cb_moviequotes\Controller\CbMoviequotesController::build'
+  requirements:
+    _permission: 'access content'
+
+cb_moviequotes.settings_form:
+  path: '/admin/config/system/cb-moviequotes'
+  defaults:
+    _title: 'cb_moviequotes settings'
+    _form: 'Drupal\cb_moviequotes\Form\SettingsForm'
+  requirements:
+    _permission: 'administer cb_moviequotes configuration'

@@ -1,0 +1,4 @@
+administer cb_moviequotes configuration:
+  title: 'Administer cb_moviequotes configuration'
+  description: 'Optional description.'
+  restrict access: true

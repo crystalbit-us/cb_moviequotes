@@ -1,0 +1,6 @@
+cb_moviequotes.settings_form:
+  title: cb_moviequotes
+  description: Configure cb_moviequotes.
+  parent: system.admin_config_system
+  route_name: cb_moviequotes.settings_form
+  weight: 10

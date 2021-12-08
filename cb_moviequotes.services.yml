@@ -1,0 +1,6 @@
+services:
+  cb_moviequotes.event_subscriber:
+    class: Drupal\cb_moviequotes\EventSubscriber\CbMoviequotesSubscriber
+    arguments: ['@messenger']
+    tags:
+      - { name: event_subscriber }
