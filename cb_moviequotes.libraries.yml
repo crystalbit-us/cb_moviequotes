@@ -1,13 +1,13 @@
 # Custom module library for general purposes.
-cb_moviequotes:
+moviequotes:
   js:
-    js/cb-moviequotes.js: {}
+    js/moviequotes.js: {}
   css:
     component:
-      css/cb-moviequotes.css: {}
+      css/moviequotes.css: {}
   dependencies:
     - core/drupalSettings
-    - cb_moviequotes/jquery-labelauty
+    - moviequotes/jquery-labelauty
 
 # Third-party library (self hosted).
 jquery-labelauty:

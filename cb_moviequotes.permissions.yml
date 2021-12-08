@@ -1,4 +1,4 @@
-administer cb_moviequotes configuration:
-  title: 'Administer cb_moviequotes configuration'
+administer moviequotes configuration:
+  title: 'Administer moviequotes configuration'
   description: 'Optional description.'
   restrict access: true

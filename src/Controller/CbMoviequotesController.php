@@ -5,7 +5,7 @@ namespace Drupal\cb_moviequotes\Controller;
 use Drupal\Core\Controller\ControllerBase;
 
 /**
- * Returns responses for cb_moviequotes routes.
+ * Returns responses for moviequotes routes.
  */
 class CbMoviequotesController extends ControllerBase {
 

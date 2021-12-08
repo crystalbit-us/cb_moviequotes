@@ -6,7 +6,7 @@ use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Configure cb_moviequotes settings for this site.
+ * Configure moviequotes settings for this site.
  */
 class SettingsForm extends ConfigFormBase {
 
@@ -31,7 +31,7 @@ class SettingsForm extends ConfigFormBase {
     $form['example'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Example'),
-      '#default_value' => $this->config('cb_moviequotes.settings')->get('example'),
+      '#default_value' => $this->config('moviequotes.settings')->get('example'),
     ];
     return parent::buildForm($form, $form_state);
   }
@@ -50,7 +50,7 @@ class SettingsForm extends ConfigFormBase {
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
-    $this->config('cb_moviequotes.settings')
+    $this->config('moviequotes.settings')
       ->set('example', $form_state->getValue('example'))
       ->save();
     parent::submitForm($form, $form_state);

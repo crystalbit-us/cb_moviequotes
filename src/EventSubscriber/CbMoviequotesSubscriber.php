@@ -9,7 +9,7 @@ use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 
 /**
- * cb_moviequotes event subscriber.
+ * moviequotes event subscriber.
  */
 class CbMoviequotesSubscriber implements EventSubscriberInterface {
 

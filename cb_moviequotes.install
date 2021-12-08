@@ -2,28 +2,28 @@
 
 /**
  * @file
- * Install, update and uninstall functions for the cb_moviequotes module.
+ * Install, update and uninstall functions for the moviequotes module.
  */
 
 /**
  * Implements hook_install().
  */
-function cb_moviequotes_install() {
+function moviequotes_install() {
   \Drupal::messenger()->addStatus(__FUNCTION__);
 }
 
 /**
  * Implements hook_uninstall().
  */
-function cb_moviequotes_uninstall() {
+function moviequotes_uninstall() {
   \Drupal::messenger()->addStatus(__FUNCTION__);
 }
 
 /**
  * Implements hook_schema().
  */
-function cb_moviequotes_schema() {
-  $schema['cb_moviequotes_example'] = [
+function moviequotes_schema() {
+  $schema['moviequotes_example'] = [
     'description' => 'Table description.',
     'fields' => [
       'id' => [
@@ -80,14 +80,14 @@ function cb_moviequotes_schema() {
 /**
  * Implements hook_requirements().
  */
-function cb_moviequotes_requirements($phase) {
+function moviequotes_requirements($phase) {
   $requirements = [];
 
   if ($phase == 'runtime') {
     $value = mt_rand(0, 100);
-    $requirements['cb_moviequotes_status'] = [
-      'title' => t('cb_moviequotes status'),
-      'value' => t('cb_moviequotes value: @value', ['@value' => $value]),
+    $requirements['moviequotes_status'] = [
+      'title' => t('moviequotes status'),
+      'value' => t('moviequotes value: @value', ['@value' => $value]),
       'severity' => $value > 50 ? REQUIREMENT_INFO : REQUIREMENT_WARNING,
     ];
   }

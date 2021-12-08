@@ -8,9 +8,9 @@ use Drupal\Core\Block\BlockBase;
  * Provides an example block.
  *
  * @Block(
- *   id = "cb_moviequotes_example",
+ *   id = "moviequotes_example",
  *   admin_label = @Translation("Example"),
- *   category = @Translation("cb_moviequotes")
+ *   category = @Translation("moviequotes")
  * )
  */
 class ExampleBlock extends BlockBase {
